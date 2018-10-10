@@ -1,0 +1,81 @@
+# SECURITY
+fos_user_security_login:
+    pattern: /connexion
+    defaults: { _controller: FOSUserBundle:Security:login }
+    requirements:
+        _method: GET
+
+fos_user_security_check:
+    pattern: /connexion/verification
+    defaults: { _controller: FOSUserBundle:Security:check }
+    requirements:
+        _method: POST
+
+fos_user_security_logout:
+    pattern: /deconnexion
+    defaults: { _controller: FOSUserBundle:Security:logout }
+    requirements:
+        _method: GET
+
+# REGISTRATION
+fos_user_registration_register:
+    pattern: /inscription
+    defaults: { _controller: FOSUserBundle:Registration:register }
+    requirements:
+        _method: GET|POST
+
+fos_user_registration_check_email:
+    pattern: /inscription/e-mail
+    defaults: { _controller: FOSUserBundle:Registration:checkEmail }
+    requirements:
+        _method: GET
+
+fos_user_registration_confirm:
+    pattern: /inscription/confirmation/{token}
+    defaults: { _controller: FOSUserBundle:Registration:confirm }
+    requirements:
+        _method: GET
+
+fos_user_registration_confirmed:
+    pattern: /inscription/confirmation
+    defaults: { _controller: FOSUserBundle:Registration:confirmed }
+    requirements:
+        _method: GET
+
+# RESETTING PASSWORD
+fos_user_resetting_request:
+    pattern: /mot-de-passe-oublie/reinitialisation
+    defaults: { _controller: FOSUserBundle:Resetting:request }
+    requirements:
+        _method: GET
+
+fos_user_resetting_send_email:
+    pattern: /mot-de-passe-oublie/e-mail
+    defaults: { _controller: FOSUserBundle:Resetting:sendEmail }
+    requirements:
+        _method: GET|POST
+
+fos_user_resetting_check_email:
+    pattern: /mot-de-passe-oublie/verification
+    defaults: { _controller: FOSUserBundle:Resetting:checkEmail }
+    requirements:
+        _method: GET
+
+fos_user_resetting_reset:
+    pattern: /mot-de-passe-oublie/{token}
+    defaults: { _controller: FOSUserBundle:Resetting:reset }
+    requirements:
+        _method: GET|POST
+
+# PROFILE
+fos_user_profile_show:
+    pattern: /profile
+    defaults: { _controller: FOSUserBundle:Profile:show }
+    requirements:
+        _method: GET
+
+fos_user_profile_edit:
+    pattern: /profile/editer
+    defaults: { _controller: FOSUserBundle:Profile:edit }
+    requirements:
+        _method: GET|POST

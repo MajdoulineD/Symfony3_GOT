@@ -1,0 +1,13 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Liste des Utilisateurs</h1>
+      <div class="fos_user_user_show">
+
+<p><b>{{ 'Username'|trans }}</b>: {{ user.username }}</p>
+<p><b>{{ 'Email'|trans }}</b>: {{ user.email }}</p>
+<p><b>{{ 'Role'|trans }}</b>: {{ user.role }}</p>
+
+</div>
+{% endblock %}

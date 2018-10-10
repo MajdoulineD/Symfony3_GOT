@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="jumbotron">
+  <h1 class="display-3">Hello, User :  {{ user.name }} !</h1>
+  <p class="lead">Votre Id {{ user.id }} </p>
+  <hr class="my-4">
+  <p>Email : {{ user.email}} </p>
+  <p>Telephone :  {{ user.telephone }} </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/" class="btn btn-primary" >Back >></a>
+  </p>
+</div>
+{% endblock %}
+

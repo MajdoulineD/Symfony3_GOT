@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App Users</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+    <link rel="icon" type="image/png" href="{{ asset('images/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+<!--===============================================================================================-->
+    <!-- CSS -->        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet" href="{{ asset('bootstrap1/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('font-awesome1/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css1/animate.css') }}">
+        <link rel="stylesheet" href="{{ asset('css1/style.css') }}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="ico1/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('ico1/apple-touch-icon-144-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('ico1/apple-touch-icon-114-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('ico1/apple-touch-icon-72-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" href="{{ asset('ico1/apple-touch-icon-57-precomposed.png') }}">
+
+</head>
+<body>
+    
+        <div class="container-login100" style="background-image: url('{{ asset('images/img-01.jpg') }}');">
+            <!-- Top menu -->
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="top-navbar-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="#">All Users</a></li>
+                        <li><a class="btn btn-link-3" href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+<!--===============================================================================================-->  
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
